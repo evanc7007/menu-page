@@ -11,6 +11,8 @@ function Accordion({ children }: Props) {
             <div className="accordion" id="accordionExample">
                 <CategoryDropdown title="Appetizers">Test</CategoryDropdown>
                 <CategoryDropdown title="Soup">Test2</CategoryDropdown>
+                <CategoryDropdown title="Fried Rice">Test</CategoryDropdown>
+                <CategoryDropdown title="Lo Mein">Test</CategoryDropdown>
             </div>
         </>
     );
