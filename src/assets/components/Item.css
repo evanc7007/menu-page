@@ -1,0 +1,14 @@
+.item-top{
+    display: flex;
+    justify-content: space-between;
+}
+.dots{
+    flex: 1;
+    border-bottom: 2px dotted black;
+    position: relative;
+    top: -6px;
+    margin-inline: 4px;
+}
+.price-sm{
+    margin-right: 1vw;
+}
