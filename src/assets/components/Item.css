@@ -11,4 +11,14 @@
 }
 .price-sm{
     margin-right: 1vw;
+    white-space: nowrap;
+}
+.desc{
+    margin-left: 1.35vw;
+}
+.price-lg{
+    white-space: nowrap;
+}
+.spicyItem{
+    color: red;
 }

@@ -2,11 +2,12 @@ import "./Item.css";
 
 interface Props {
     children?: string;
-    itemId: string;
+    itemId?: string;
     name: string;
     price: number;
     smallPrice?: number;
     displaySizes?: boolean;
+    spicy?: boolean;
 }
 
 function Item({
@@ -16,12 +17,13 @@ function Item({
     smallPrice,
     displaySizes = false,
     children,
+    spicy = false
 }: Props) {
     return (
-        <div className="item">
+        <div className={`item ${spicy && "spicyItem"}`}>
             <div className="item-top">
                 <strong>
-                    {itemId}. {name}
+                    {itemId ? (`${itemId}. ${name}`) : name}
                 </strong>
                 <div className="dots"></div>
                 <strong className="price">
@@ -43,7 +45,7 @@ function Item({
                     )}
                 </strong>
             </div>
-            {children}
+            <div className="desc">{children}</div>
         </div>
     );
 }

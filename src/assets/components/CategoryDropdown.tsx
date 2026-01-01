@@ -11,7 +11,7 @@ function CategoryDropdown({title, children} : Props) {
 
   return (
     <div className="accordion-item">
-      <h2 className="accordion-header">
+      <h2 className="accordion-header sticky-top">
         <button
           className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse-${id}`} aria-expanded="false" aria-controls={`collapse-${id}`}>
           {title}
