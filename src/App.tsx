@@ -1,4 +1,3 @@
-
 import './App.css'
 
 import Accordion from './assets/components/Accordion'
