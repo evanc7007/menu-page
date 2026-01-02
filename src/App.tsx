@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <Accordion>Full Menu</Accordion>
+      <Accordion>Full Menu Test</Accordion>
     </>
   )
 }
