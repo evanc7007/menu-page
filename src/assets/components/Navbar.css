@@ -1,0 +1,15 @@
+#logo{
+    max-height: 30px;
+    padding-right: 5%;
+}
+.navbar{
+    background-color: #bd132d;
+}
+.navbar-toggler{
+    background-color: white;
+}
+.navbar-brand{
+    font-weight: bold;
+    color: black;
+    text-shadow: 0.03em 0 white, 0 0.03em white, -0.03em 0 white, 0 -0.03em white, -0.03em -0.03em white, -0.03em 0.03em white, 0.03em -0.03em white, 0.03em 0.03em white;
+}
