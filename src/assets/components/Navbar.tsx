@@ -8,7 +8,7 @@ function Navbar() {
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
                     <img id="logo" src="../Logo.png" alt="Logo"></img>
-                    Yum Yum #8
+                    Yum Yum No.8
                 </a>
                 <button
                     className="navbar-toggler"
