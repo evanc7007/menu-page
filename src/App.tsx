@@ -5,10 +5,12 @@ import Home from "./Pages/home";
 import Location from "./Pages/location";
 import Contact from "./Pages/contact";
 import Navbar from "./assets/components/Navbar";
+import ScrollToTop from "./assets/components/ScrollToTop";
 
 function App() {
     return (
         <Router>
+            <ScrollToTop />
             <Navbar />
             <div id="bodyele">
                 <Routes>
