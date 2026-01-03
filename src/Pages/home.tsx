@@ -41,7 +41,7 @@ function Home() {
                         Broccoli, or even anything in our Special Combination
                         Plates. You can never go wrong.
                     </p>
-                    <a className="btn btn-lg" href="#/location" role="button">
+                    <a className="btn btn-lg" href="#/menu" role="button">
                         See Menu
                     </a>
                 </div>
