@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import { useLocation } from "react-router-dom";
+import Logo from "../Logo.png"
 
 function Navbar() {
     const location = useLocation();
@@ -7,7 +8,7 @@ function Navbar() {
         <nav className="navbar fixed-top">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
-                    <img id="logo" src="../Logo.png" alt="Logo"></img>
+                    <img id="logo" src={Logo} alt="Logo"></img>
                     Yum Yum No.8
                 </a>
                 <button
@@ -63,52 +64,27 @@ function Navbar() {
                                     Menu
                                 </a>
                             </li>
-                            <li className="nav-item dropdown">
+                            <li className="nav-item">
                                 <a
-                                    className="nav-link dropdown-toggle"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
+                                    className={`nav-link ${
+                                        location.pathname == "/location" && "active"
+                                    }`}
+                                    href="#/location"
                                 >
-                                    Dropdown
+                                    Location
                                 </a>
-                                <ul className="dropdown-menu">
-                                    <li>
-                                        <a className="dropdown-item" href="#">
-                                            Action
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="#">
-                                            Another action
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <hr className="dropdown-divider" />
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="#">
-                                            Something else here
-                                        </a>
-                                    </li>
-                                </ul>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    className={`nav-link ${
+                                        location.pathname == "/contact" && "active"
+                                    }`}
+                                    href="#/contact"
+                                >
+                                    Contact Us
+                                </a>
                             </li>
                         </ul>
-                        <form className="d-flex mt-3" role="search">
-                            <input
-                                className="form-control me-2"
-                                type="search"
-                                placeholder="Search"
-                                aria-label="Search"
-                            />
-                            <button
-                                className="btn btn-outline-success"
-                                type="submit"
-                            >
-                                Search
-                            </button>
-                        </form>
                     </div>
                 </div>
             </div>
