@@ -26,6 +26,9 @@ h1{
     margin-bottom: 4vh;
     
 }
+h2{
+    white-space: pre-wrap;
+}
 h3{
     text-align: center;
     white-space: pre-wrap;
@@ -61,7 +64,7 @@ p{
     height: auto;
     justify-content: space-between;
 }
-#Menu{
+.imgInBox{
     width: 70vw;
     border-radius: 50%;
     margin-left: 5vw;
@@ -69,7 +72,7 @@ p{
     display: inline-block;
     position: absolute;
 }
-#menudiv{
+.positiondiv{
     position: relative;
     height: 45vw;
 }
@@ -90,8 +93,39 @@ p{
     border: solid black 5px;
     flex-shrink: 0
 }
+#locationBoxText{
+    padding-top: 10vh;
+    margin-left: 5vw;
+    color: #bd132d;
+    font-weight: 660;
+    font-size: 4vw;
+}
+#whiteBox{
+    background-color: white;
+    padding-top: 3vh;
+}
+#map{
+    border-radius: 0;
+    border: black 4px solid;
+    width: 60vw;
+}
+#MapBox{
+    background-color: #bd132d;
+    color: white;
+    width: 35vw;
+    padding-bottom: 5vh;
+    border: 0;
+}
+#button2{
+    margin-top: 2vh;
+    background-color: white;
+    color: black;
+}
 @media (max-width: 470px){
     .MenuBox{
         width: 80vw;
+    }
+    #MapBox{
+        width: 70vw;
     }
 }

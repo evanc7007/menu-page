@@ -1,5 +1,6 @@
 import WokFire from "../assets/Wok_Fire.jpg";
 import Menu from "../assets/menu2026_01.jpg";
+import Map from "../assets/menumap.png"
 import "./home.css";
 
 function Home() {
@@ -30,8 +31,8 @@ function Home() {
                 </a>
             </div>
             <div className="redBox">
-                <div id="menudiv">
-                    <img id="Menu" src={Menu} alt="Menu Image" />
+                <div className="positiondiv">
+                    <img className="imgInBox" src={Menu} alt="Menu Image" />
                 </div>
                 <div className="MenuBox">
                     <h2>Menu</h2>
@@ -43,6 +44,18 @@ function Home() {
                     </p>
                     <a className="btn btn-lg" href="#/menu" role="button">
                         See Menu
+                    </a>
+                </div>
+            </div>
+            <h2 id="locationBoxText">Find Our Location</h2>
+            <div className="redBox" id="whiteBox">
+                <div className="positiondiv">
+                    <img className="imgInBox" id="map" src={Map} alt="Map" />
+                </div>
+                <div className="MenuBox" id="MapBox">
+                    <h2>Find Yum Yum No.8</h2>
+                    <a className="btn btn-lg" id="button2" href="#/location" role="button">
+                        Locate Us
                     </a>
                 </div>
             </div>
