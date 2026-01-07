@@ -6,6 +6,7 @@ import Location from "./Pages/location";
 import Contact from "./Pages/contact";
 import Navbar from "./assets/components/Navbar";
 import ScrollToTop from "./assets/components/ScrollToTop";
+import Footer from "./assets/components/Footer";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
             </div>
+            <Footer></Footer>
         </Router>
     );
 }

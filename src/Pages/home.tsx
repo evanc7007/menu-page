@@ -49,7 +49,7 @@ function Home() {
             </div>
             <h2 id="locationBoxText">Find Our Location</h2>
             <div className="redBox" id="whiteBox">
-                <div className="positiondiv">
+                <div className="positiondiv2">
                     <img className="imgInBox" id="map" src={Map} alt="Map" />
                 </div>
                 <div className="MenuBox" id="MapBox">
