@@ -1,5 +1,5 @@
 import "./App.css";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Menu from "./Pages/menu";
 import Home from "./Pages/home";
 import Location from "./Pages/location";
@@ -11,7 +11,6 @@ import Footer from "./assets/components/Footer";
 function App() {
     return (
         <Router>
-            <ScrollToTop />
             <Navbar />
             <div id="bodyele">
                 <Routes>

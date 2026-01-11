@@ -1,4 +1,4 @@
-// ScrollToTop.tsx
+// ScrollToTop.tsx not necessary anymore due to browser router
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 

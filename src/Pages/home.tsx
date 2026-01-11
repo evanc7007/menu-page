@@ -26,7 +26,7 @@ function Home() {
                 <p>Find our location in Harriman, Tennessee!</p>
             </div>
             <div className="buttonBox">
-                <a className="btn btn-lg" href="#/location" role="button">
+                <a className="btn btn-lg" href="/location" role="button">
                     Find Us
                 </a>
             </div>
@@ -42,7 +42,7 @@ function Home() {
                         Broccoli, or even anything in our Special Combination
                         Plates. You can never go wrong.
                     </p>
-                    <a className="btn btn-lg" href="#/menu" role="button">
+                    <a className="btn btn-lg" href="/menu" role="button">
                         See Menu
                     </a>
                 </div>
@@ -54,7 +54,7 @@ function Home() {
                 </div>
                 <div className="MenuBox" id="MapBox">
                     <h2>Find Yum Yum No.8</h2>
-                    <a className="btn btn-lg" id="button2" href="#/location" role="button">
+                    <a className="btn btn-lg" id="button2" href="/location" role="button">
                         Locate Us
                     </a>
                 </div>

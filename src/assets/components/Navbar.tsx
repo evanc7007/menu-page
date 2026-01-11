@@ -7,7 +7,7 @@ function Navbar() {
     return (
         <nav className="navbar fixed-top">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand" href="/">
                     <img id="logo" src={Logo} alt="Logo"></img>
                     Yum Yum No.8
                 </a>
@@ -49,7 +49,7 @@ function Navbar() {
                                         location.pathname == "/" && "active"
                                     }`}
                                     aria-current="page"
-                                    href="#"
+                                    href="/"
                                 >
                                     Home
                                 </a>
@@ -59,7 +59,7 @@ function Navbar() {
                                     className={`nav-link ${
                                         location.pathname == "/menu" && "active"
                                     }`}
-                                    href="#/menu"
+                                    href="/menu"
                                 >
                                     Menu
                                 </a>
@@ -69,7 +69,7 @@ function Navbar() {
                                     className={`nav-link ${
                                         location.pathname == "/location" && "active"
                                     }`}
-                                    href="#/location"
+                                    href="/location"
                                 >
                                     Location
                                 </a>
@@ -79,7 +79,7 @@ function Navbar() {
                                     className={`nav-link ${
                                         location.pathname == "/contact" && "active"
                                     }`}
-                                    href="#/contact"
+                                    href="/contact"
                                 >
                                     Contact Us
                                 </a>
