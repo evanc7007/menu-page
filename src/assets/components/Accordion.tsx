@@ -355,7 +355,7 @@ function Accordion({ children }: Props) {
                     <Item itemId="60" name="Shrimp Egg Foo Young" price={eggFooYoung} displaySizes={true}>
                     </Item>
                     <hr></hr>
-                    <Item itemId="60" name="House Special Egg Foo Young" price={eggFooYoung} displaySizes={true}>
+                    <Item itemId="60a" name="House Special Egg Foo Young" price={eggFooYoung} displaySizes={true}>
                     </Item>
                 </CategoryDropdown>
                 <CategoryDropdown title="Pork">
