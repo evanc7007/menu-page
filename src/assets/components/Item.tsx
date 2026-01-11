@@ -1,4 +1,5 @@
 import "./Item.css";
+import Pepper from "../spicy.png";
 
 interface Props {
     children?: string;
@@ -17,13 +18,16 @@ function Item({
     smallPrice,
     displaySizes = false,
     children,
-    spicy = false
+    spicy = false,
 }: Props) {
     return (
         <div className={`item ${spicy && "spicyItem"}`}>
             <div className="item-top">
                 <strong>
-                    {itemId ? (`${itemId}. ${name}`) : name}
+                    {itemId ? `${itemId}. ${name}` : name}
+                    {spicy && (
+                        <img className="pepper" src={Pepper} alt="Pepper" />
+                    )}
                 </strong>
                 <div className="dots"></div>
                 <strong className="price">

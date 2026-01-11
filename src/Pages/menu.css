@@ -1,0 +1,18 @@
+.bottomgap{
+    height: 10vh;
+}
+.topgap{
+    height: 4vh;
+}
+#legend{
+    text-align: left;
+    font-size: medium;
+}
+.legendBox{
+    display: flex;
+    margin-left: 1vw;
+}
+.menu-content{
+    max-width: 90vw;
+    margin: auto;
+}

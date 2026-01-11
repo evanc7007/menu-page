@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { useId } from 'react';
+import "./CategoryDropdown.css";
 
 interface Props{
     title: string;
