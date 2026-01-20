@@ -1,7 +1,10 @@
-function Location(){
+import "./location.css";
+
+function Location() {
     return (
         <div className="container my-5">
             <div className="row justify-content-center">
+                <h1 id="loc_title">Come visit us today! We await your arrival!</h1>
                 <div className="col-lg-8 col-md-10">
                     <div className="card shadow-sm">
                         <div className="card-body p-0">
@@ -39,6 +42,6 @@ function Location(){
             </div>
         </div>
     );
-};
+}
 
 export default Location;
