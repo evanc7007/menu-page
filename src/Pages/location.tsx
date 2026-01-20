@@ -1,4 +1,4 @@
-const Location: React.FC = () => {
+function Location(){
     return (
         <div className="container my-5">
             <div className="row justify-content-center">
