@@ -35,7 +35,7 @@ function Footer() {
                     <div className="blocktext">
                         <h3 className="footerh3">Updates</h3>
                         <br></br>
-                        <p className="footerp" style={{lineHeight: "1.8"}}>For information related to closures or holiday hours, check our <a id="gbusiness" href="https://share.google/4l8dAjz9Sf7j6rEb0" target="_blank">Google Business Profile</a>. Any updates will also be posted in the restaurant itself.</p>
+                        <p className="footerp" style={{lineHeight: "1.8"}}>For information related to closures or holiday hours, check our <a id="gbusiness" href="https://share.google/4l8dAjz9Sf7j6rEb0" target="_blank" rel="noopener noreferrer">Google Business Profile</a>. Any updates will also be posted in the restaurant itself.</p>
                     </div>
                 </div>
             </div>
