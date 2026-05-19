@@ -1,21 +1,22 @@
 import "./Navbar.css";
+import { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import type * as bootstrap from "bootstrap";
+import { Offcanvas } from "bootstrap";
 import Logo from "../Logo.png"
-
-declare global {
-    interface Window {
-        bootstrap: typeof bootstrap;
-    }
-}
 
 function Navbar() {
     const location = useLocation();
+    const offcanvasRef = useRef<HTMLDivElement>(null);
+    const instanceRef = useRef<Offcanvas | null>(null);
 
-    const closeOffcanvas = () => {
-        const el = document.getElementById("offcanvasNavbar");
-        if (el) window.bootstrap?.Offcanvas?.getInstance(el)?.hide();
-    };
+    useEffect(() => {
+        if (offcanvasRef.current) {
+            instanceRef.current = Offcanvas.getOrCreateInstance(offcanvasRef.current);
+        }
+    }, []);
+
+    const showOffcanvas = () => instanceRef.current?.show();
+    const closeOffcanvas = () => instanceRef.current?.hide();
 
     return (
         <nav className="navbar fixed-top">
@@ -27,14 +28,14 @@ function Navbar() {
                 <button
                     className="navbar-toggler"
                     type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar"
+                    onClick={showOffcanvas}
                     aria-controls="offcanvasNavbar"
                     aria-label="Toggle navigation"
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div
+                    ref={offcanvasRef}
                     className="offcanvas offcanvas-end"
                     tabIndex={-1}
                     id="offcanvasNavbar"
@@ -50,7 +51,7 @@ function Navbar() {
                         <button
                             type="button"
                             className="btn-close"
-                            data-bs-dismiss="offcanvas"
+                            onClick={closeOffcanvas}
                             aria-label="Close"
                         ></button>
                     </div>
