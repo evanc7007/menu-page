@@ -29,7 +29,7 @@ function Location(){
                                 href="https://www.google.com/maps/search/?api=1&query=Yum+Yum+No+8+Harriman+TN"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="btn btn-primary"
+                                className="btn"
                             >
                                 Open in Maps
                             </a>

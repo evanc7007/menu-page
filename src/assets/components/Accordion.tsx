@@ -660,7 +660,7 @@ function Accordion({ children }: Props) {
                     <Item name="White Rice" smallPrice={3} price={4.95}>
                     </Item>
                     <hr></hr>
-                    <Item name="Cripsy Noodles" price={0.75}>
+                    <Item name="Crispy Noodles" price={0.75}>
                     </Item>
                     <hr></hr>
                     <Item name="Fortune Cookies (3)" price={0.3}>

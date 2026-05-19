@@ -1,3 +1,8 @@
 #bodyele {
     padding-top: 70px;
 }
+.btn {
+    background-color: #bd132d;
+    color: white;
+    border-radius: 15px;
+}

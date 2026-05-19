@@ -48,11 +48,6 @@ p{
     justify-content: center;
     margin-bottom: 7vh;
 }
-.btn{
-    background-color: #bd132d;
-    color: white;
-    border-radius: 15px;
-}
 .redBox{
     display: flex;
     background-color: #bd132d;

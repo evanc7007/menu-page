@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../Logo.png"
 
 function Navbar() {
@@ -7,10 +7,10 @@ function Navbar() {
     return (
         <nav className="navbar fixed-top">
             <div className="container-fluid">
-                <a className="navbar-brand" href="/">
+                <Link className="navbar-brand" to="/">
                     <img id="logo" src={Logo} alt="Logo"></img>
                     Yum Yum No.8
-                </a>
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -44,45 +44,49 @@ function Navbar() {
                     <div className="offcanvas-body">
                         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className={`nav-link ${
                                         location.pathname == "/" && "active"
                                     }`}
                                     aria-current="page"
-                                    href="/"
+                                    to="/"
+                                    data-bs-dismiss="offcanvas"
                                 >
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className={`nav-link ${
                                         location.pathname == "/menu" && "active"
                                     }`}
-                                    href="/menu"
+                                    to="/menu"
+                                    data-bs-dismiss="offcanvas"
                                 >
                                     Menu
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className={`nav-link ${
                                         location.pathname == "/location" && "active"
                                     }`}
-                                    href="/location"
+                                    to="/location"
+                                    data-bs-dismiss="offcanvas"
                                 >
                                     Location
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className={`nav-link ${
                                         location.pathname == "/contact" && "active"
                                     }`}
-                                    href="/contact"
+                                    to="/contact"
+                                    data-bs-dismiss="offcanvas"
                                 >
                                     Contact Us
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
