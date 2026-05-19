@@ -16,3 +16,36 @@
     max-width: 90vw;
     margin: auto;
 }
+.printedMenuTitle{
+    text-align: center;
+    color: #bd132d;
+    margin-top: 6vh;
+    margin-bottom: 1vh;
+}
+.printedMenuNote{
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 3vh;
+}
+.printedMenuGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.printedMenuGrid img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: transform 0.15s ease;
+    display: block;
+}
+.printedMenuGrid img:hover{
+    transform: scale(1.01);
+}
+@media (max-width: 700px){
+    .printedMenuGrid{
+        grid-template-columns: 1fr;
+    }
+}
