@@ -1,9 +1,22 @@
 import "./Navbar.css";
 import { Link, useLocation } from "react-router-dom";
+import type * as bootstrap from "bootstrap";
 import Logo from "../Logo.png"
+
+declare global {
+    interface Window {
+        bootstrap: typeof bootstrap;
+    }
+}
 
 function Navbar() {
     const location = useLocation();
+
+    const closeOffcanvas = () => {
+        const el = document.getElementById("offcanvasNavbar");
+        if (el) window.bootstrap?.Offcanvas?.getInstance(el)?.hide();
+    };
+
     return (
         <nav className="navbar fixed-top">
             <div className="container-fluid">
@@ -50,7 +63,7 @@ function Navbar() {
                                     }`}
                                     aria-current="page"
                                     to="/"
-                                    data-bs-dismiss="offcanvas"
+                                    onClick={closeOffcanvas}
                                 >
                                     Home
                                 </Link>
@@ -61,7 +74,7 @@ function Navbar() {
                                         location.pathname == "/menu" && "active"
                                     }`}
                                     to="/menu"
-                                    data-bs-dismiss="offcanvas"
+                                    onClick={closeOffcanvas}
                                 >
                                     Menu
                                 </Link>
@@ -72,7 +85,7 @@ function Navbar() {
                                         location.pathname == "/location" && "active"
                                     }`}
                                     to="/location"
-                                    data-bs-dismiss="offcanvas"
+                                    onClick={closeOffcanvas}
                                 >
                                     Location
                                 </Link>
@@ -83,7 +96,7 @@ function Navbar() {
                                         location.pathname == "/contact" && "active"
                                     }`}
                                     to="/contact"
-                                    data-bs-dismiss="offcanvas"
+                                    onClick={closeOffcanvas}
                                 >
                                     Contact Us
                                 </Link>
